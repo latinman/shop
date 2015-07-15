@@ -18,5 +18,7 @@ group :development, :test do
   gem 'bootstrap-sass', '3.3.5'
   gem 'font-awesome-sass', '4.3.0'
   gem 'devise', '3.5.1'
+  gem 'stripe', '1.23.0'
+  gem 'figaro', '1.1.1'
 end
 

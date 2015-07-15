@@ -2,3 +2,53 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+// Logo
+.logo {
+  font-size: 150%;
+  color: #e67e22;
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+.well {
+  box-shadow: -20px 3px 40px #ccc;
+}
+
+.plan-price {
+  font-size: 200%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 80%;
+  font-weight: 300;
+}
+
+.alert-notice {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
