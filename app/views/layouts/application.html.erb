@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tinito</title>
+  <title>tinito</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -17,8 +17,8 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: "navbar-brand" do %>
-          <i class="fa fa-tag"></i>
-          Tinito
+          <i class="fa fa-tag logo"></i>
+          <span class="logo">tinito</span>
       <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
@@ -26,7 +26,6 @@
         <% if current_user %>
         <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-primary navbar-btn" %>
          <% else %>
-            <%= link_to "Sign Up", new_user_registration_path, method: :get, class: "btn btn-primary navbar-btn" %>
             <%= link_to "Log In", new_user_session_path, method: :get, class: "btn btn-success navbar-btn" %>
         <% end %>
       </div>
