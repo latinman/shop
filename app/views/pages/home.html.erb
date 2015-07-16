@@ -7,7 +7,7 @@
       <div class="well">
         <h2 class="text-center">Membership</h2>
         <h4>Pay <span class="plan-price">$79.95</span>/year and receive the best prices you can't find.</h4>
-        <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg btn-block" %>
+        <%= link_to "Sign Up", new_user_registration_path(plan: @pro_plan), class: "btn btn-primary btn-lg btn-block" %>
       </div>
     </div>
 </div>
