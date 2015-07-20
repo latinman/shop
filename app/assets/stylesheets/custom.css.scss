@@ -69,9 +69,39 @@ body {
   border-color: #faebcc;
 }
 
-footer {
-  text-align: center;
+// Buttons
+
+.btn:link,
+.btn-visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
 }
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #e67e22;
+}
+
 
 // Footer
 
@@ -89,6 +119,7 @@ footer {
 .social-icons {
   list-style: none;
   float: right;
+  font-size: 160%;
 }
 
 .footer-nav li,
@@ -117,11 +148,6 @@ footer {
 .footer-nav li a:active {
   color: #ddd;
 }
-
-//.social-icons li a:hover,
-//.social-icons li a:active {
-//  font-size: 160%;
-//}
 
 .ion-social-facebook:hover {
   color: #3b5998;
