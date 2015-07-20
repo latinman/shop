@@ -20,5 +20,6 @@ group :development, :test do
   gem 'devise', '3.5.1'
   gem 'stripe', '1.23.0'
   gem 'figaro', '1.1.1'
+  gem 'ionicons-rails', '2.0.0'
 end
 

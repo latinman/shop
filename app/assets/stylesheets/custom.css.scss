@@ -2,6 +2,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import 'ionicons';
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic);
 
 * {
@@ -55,4 +56,8 @@ body {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
+}
+
+footer {
+  text-align: center;
 }

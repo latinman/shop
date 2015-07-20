@@ -43,6 +43,10 @@
     <%= content_tag :div, value, class: "alert alert-#{key}" %>
       <% end %>
     <%= yield %>
+
+  <footer>
+    &copy;<%= Time.now.strftime("%Y") %> tinito. All rights reserved.
+  </footer>
 </div>
 </body>
 </html>
