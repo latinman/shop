@@ -21,5 +21,7 @@ group :development, :test do
   gem 'stripe', '1.23.0'
   gem 'figaro', '1.1.1'
   gem 'ionicons-rails', '2.0.0'
+  gem 'carrierwave'
+  gem 'rmagick'
 end
 

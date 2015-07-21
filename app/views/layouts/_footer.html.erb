@@ -1,0 +1,35 @@
+<footer>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="footer-nav">
+        <li><%= link_to "About Us", about_path %></li>
+        <li><%= link_to "Press", "#" %></li>
+        <li><%= link_to "iOS App", "#" %></li>
+        <li><%= link_to "Android App", "#" %></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="social-icons">
+        <li><%= link_to "http://www.facebook.com" do %>
+              <i class="ion-social-facebook"></i>
+          <% end %>
+        </li>
+        <li><%= link_to "http://www.twitter.com" do %>
+              <i class="ion-social-twitter"></i>
+          <% end %>
+        </li>
+        <li><%= link_to "#" do %>
+              <i class="ion-social-googleplus"></i>
+          <% end %>
+        </li>
+        <li><%= link_to "#" do %>
+              <i class="ion-social-instagram"></i>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <p>Copyright &copy; <%= Time.now.strftime("%Y") %> tinito. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
