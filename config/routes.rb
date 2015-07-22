@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get "/about" => "pages#about"
   root "pages#home"
   resources :contacts
-  resources :products, only: [:index, :edit]
+  resources :products, only: [:index, :create, :edit]
 end

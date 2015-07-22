@@ -1,3 +1,17 @@
-h1 {
+.products {
   margin-bottom: 80px;
+}
+
+.well.product {
+  float: left;
+  height: auto;
+  width: auto;
+  margin-right: 30px;
+  h4 {
+    color: #e67e22;
+  }
+}
+
+span.price {
+  color: #007f00;
 }

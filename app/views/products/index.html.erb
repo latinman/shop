@@ -1,10 +1,16 @@
 <div class="row">
-  <h1 class="text-center">Products</h1>
+  <h1 class="products text-center">Products</h1>
       <% @products.each do |product| %>
-          <%= product.name %><br />
+          <p><%= product.name %></p>
+      <div class="well product">
+        <% if product.image_url.empty? %>
+            <%=  product.blank_img %>
+         <% else %>
           <%= image_tag product.image_url.to_s %><br />
+         <% end %>
+        <h4>Description</h4>
           <%= product.description %><br />
-          <%= product.price %>
+          <span class="price">$<%= product.price %></span>
         </div>
       <% end %>
 </div>
