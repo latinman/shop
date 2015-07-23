@@ -5,6 +5,7 @@
   <div class="col-md-4">
     <h3><%= @product.name %></h3>
     <p><%= @product.description %></p>
-    <%= number_with_precision(@product.price, precision: 2, delimeter: ",") %>
+    <span class="price"><%= number_with_precision(@product.price, precision: 2, delimeter: ",") %></span>
+    <%= button_to "Purchase", "#" %>
   </div>
 </div>
