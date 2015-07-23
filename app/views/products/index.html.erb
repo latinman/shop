@@ -6,11 +6,11 @@
         <% if product.image_url.empty? %>
             <%=  product.blank_img %>
          <% else %>
-          <%= image_tag product.image_url.to_s %><br />
+          <%= link_to image_tag(product.image_url.to_s), product_path(product) %><br />
          <% end %>
         <h4>Description</h4>
           <%= product.description %><br />
-          <span class="price">$<%= product.price %></span>
+          <span class="price">$<%= number_with_precision(product.price, precision: 2, delimeter: ",") %></span>
         </div>
       <% end %>
 </div>
